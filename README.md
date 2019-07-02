@@ -25,3 +25,7 @@ The following threshold variables can be set inside the script to control when N
     
     # CRITICAL threshold if serials differ
     $crit_threshold_delta  = 10;
+
+## Requirements
+The script requires `Net/DNS2.php` (PHP Resolver library used to communicate with a DNS server).
+Install it with `sudo apt-get install php-net-dns2` on Debian based systems. 
