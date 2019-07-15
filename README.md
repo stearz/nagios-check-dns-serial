@@ -1,13 +1,13 @@
 # check-dns-serial.php
 
 ## Description
-This PHP script has run quite some time is a nagios check plugin. It allows you to check if all nameservers that host a 
+This PHP script has run quite some time as a nagios check plugin. It allows you to check if all nameservers that host a 
 DNS zone are up-to-date and deliver the same serial in the SOA-record of the zone.
 It was written 2014 by Stephan Schwarz (@stearz)
 
 ## Usage
 
-    dns-serial-check.php <ip-of-primary-dns> <domain.tld>
+    check-dns-serial.php <ip-of-primary-dns> <domain.tld>
 
 ## Exit codes
 The script uses exit codes and an output that Nagios can understand
