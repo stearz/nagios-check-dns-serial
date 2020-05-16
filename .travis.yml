@@ -1,6 +1,5 @@
 language: minimal
 before_deploy:
-  # Set up git user name and tag this commit
   - git config --local user.name "Stephan Schwarz"
   - git config --local user.email "stearz@gmx.de"
   - export TRAVIS_TAG=$(cat VERSION)
@@ -9,7 +8,7 @@ before_deploy:
 deploy:
   provider: releases
   api_key:
-    secure: VGSDWenmU6cQN0eIvE/wy+nEXlWgbQsOwPkT54B6G+D9asTyENL+Ra5qHMj44vGNiaH8Kswu2T5N1KFFfR7qVUyxNMjFKMIdlAvPeqD8C3fsmYn57dGBUztLxmW7xn2aNfUDv/4uf+SQwakCz2YKWuoC9b9RE+88HezhXFLDXXnZiXxlsmhE/wqdejSGWSFXZXvdmKlHkBuA16RNY8FV5+m1fkYdxhTw+Jx+spsKCkY8TKTmEhYv0W8kUrCljZ/jIQQGXKsEZnB0YPPX/KCcY/JM9lDiTKbMdjRme1+SAFSeVoSDXnybcLxOEDfUyFCKCgprQ5GPpNJSSsbItsHnaFpYiwgQr1Q2lPrROa2s7zdRiV9RIpQzW0ZxENea9sETBvYnywW7KAZEp6Db9W1zcEtXzQaoqkmCKcuzLydqHWsONREnClUVMSeWp4wnueMLhyU5KuJArmbuLIXohP5lZtjLPxJZG07WxYom+5cPb3J/CrIbcmjzwdtHVTGA0QnBiUTAiz7HP4ilfKpC4QIcjJMGiIPRmm3QZJ8gcREewJUgl4vCojBVyw49S6FQbFjHjzek3ZaPWg6xT75kMnQIxQ+KjIIqNG4mXkjyZcWkChbrO4EZsLR7vfLTExHnJbhzR2wChFx7TpzZrS2m++W+ewbglb2PHqSX21m14Fxw1Gs=
+    secure: IKIQzH9c2soGoKj0YXsaPNg7ipP7HmKqVZ7jNsY9aYO+DUNhd362YACataKc2iVE4xqO3mMyHuGNNImgeKem9rBJszanainmVEWL4rSRJGQcGWP5Bp15RshQVQECxgg0p4hDuYQFsxgR1rgTL7NjhEWIFq286MjiFvhDQkiVYS35tyW7xYzt/keluhEnR1W1l6rUGlpJkACGJeouQnGEtZBYYFV78q7b8eqMOxCDpyvOZkwVfUpts4Xdv+1wQRtP4/wuXm+N/ld5M2q2Pq76gBYyhusETVMQKIBOJUvKtOV+XSN3Ed1O2r9BmNDHHtE6NzE06zrD8G7Rd++LqcUSE29Q2jeDnBKj6rO19ScWpbk/5niJZlttm4oRBPiG49FWZl4ZC/O3WDnGHLZgms2FZPVCjyVv9YhO/FeSLPhaegAWUhpTyIwLt1s5RyScqtGzQhX3XbMePQzzuXLpMYTnTEH6p0NzxD/ktzZbypEfx01ncOdANOvPRLwk7zlbGm9th5tcZKtwSQf++u87aafooWOhI7RNsIrX968ckdu4J1S46Ih72t5A2LXS3arI6R+clDjZ5GrQI2Lv3ulMJNCmssW+m6z0Hpv3cu1aw2ctss6gEZaAUZIb8xydoRpgWE3gDx2GpwBMAlBMDRZ+VTSaIMtvzZKNfm/9SzT9K8xjOus=
   file: nagios-check-dns-serial.tar.gz
   on:
     repo: stearz/nagios-check-dns-serial
