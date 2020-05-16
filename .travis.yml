@@ -1,4 +1,4 @@
-language: php
+language: minimal
 before_deploy:
   # Set up git user name and tag this commit
   - git config --local user.name "Stephan Schwarz"
